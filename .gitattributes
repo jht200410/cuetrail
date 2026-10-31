@@ -1,0 +1,4 @@
+* text=auto eol=lf
+src/cuetrail_scope/** -text
+src/cuetrail_governance/** -text
+src/cuetrail_native/** -text
