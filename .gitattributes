@@ -1,4 +1,5 @@
 * text=auto eol=lf
+vendor/context-weave-exact32/** -text
 src/cuetrail_scope/** -text
 src/cuetrail_governance/** -text
 src/cuetrail_native/** -text

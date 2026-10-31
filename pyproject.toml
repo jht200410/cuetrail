@@ -12,5 +12,10 @@ license = {file = "LICENSE"}
 authors = [{name = "CueTrail contributors"}]
 dependencies = []
 
+[project.optional-dependencies]
+baseline = ["numpy>=1.26,<3"]
+local-encoder = ["numpy>=1.26,<3", "torch>=2.2", "transformers>=4.40"]
+native = ["numpy>=1.26,<3", "fastapi>=0.115,<1", "httpx>=0.27,<1", "uvicorn>=0.30,<1"]
+
 [tool.setuptools.packages.find]
 where = ["src"]
