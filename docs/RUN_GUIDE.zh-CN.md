@@ -1,6 +1,6 @@
 # CueTrail v0.30 / V77 运行指南
 
-服务入口为 `cuetrail_native.server:app`。本指南复现公开仓库的运行快照；参评身份与已记录线上构建的区别见[版本核对说明](EVALUATION_VERSION.zh-CN.md)。文档修订不部署新代码，也不改变已受理 Full 的配置。
+服务入口为 `cuetrail_native.server:app`。本指南介绍公开仓库的构建与运行步骤；版本、构建标识和线上兼容性修复记录见[版本核对说明](EVALUATION_VERSION.zh-CN.md)。文档修订不部署新代码，也不改变已受理 Full 的配置。
 
 ## 1. 环境与安装
 

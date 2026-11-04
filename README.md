@@ -31,9 +31,9 @@ V77 的程序通道是确定性解析与触发，启用条件为 `query_document
 | 干净 Git 检出的运行构建 SHA256 | `b314607b21aae56132d71133c9fc79ed0b3fd642406ecd9cfc2ed29743139a44` |
 | 文件核验 | [`runtime/manifest.json`](runtime/manifest.json)、[`vendor/manifest.json`](vendor/manifest.json) |
 | 完整安装、配置与启动 | [运行指南](docs/RUN_GUIDE.zh-CN.md) |
-| 参评身份与运行记录的区别 | [版本核对说明](docs/EVALUATION_VERSION.zh-CN.md) |
+| 版本、构建与运行记录 | [版本核对说明](docs/EVALUATION_VERSION.zh-CN.md) |
 
-本次仓库补充仅修改文档，运行构建清单和代码保持不变。历史部署清单的 CRLF 换行产生 `be50255b…` 构建标识，与上表 LF 清单包含相同的运行文件哈希；另有一次查询长度恢复构建，包含实际代码差异。具体身份与复现范围见版本核对说明。Python 分发包的 `0.1.0` 是打包版本，不是平台登记的系统版本。
+本次仓库补充仅修改文档，运行构建清单和代码保持不变。历史部署清单的 CRLF 换行产生 `be50255b…` 构建标识，与上表 LF 清单包含相同的运行文件哈希。线上查询长度恢复属于输入兼容性修复，正常成功请求的处理路径与所用模型保持原配置；构建标识与修复记录见版本核对说明。Python 分发包的 `0.1.0` 是打包版本，不是平台登记的系统版本。
 
 ## 安装与构建
 
