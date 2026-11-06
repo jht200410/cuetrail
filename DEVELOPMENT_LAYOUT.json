@@ -1,0 +1,701 @@
+{
+  "schema_version": 1,
+  "system": "CueTrail: procedures and specifications",
+  "before_commit": "8f08ec79a8bea985c0962f9fbed5398977af54ca",
+  "release_paths_preserved": true,
+  "original_files": {
+    ".gitattributes": {
+      "path": ".gitattributes",
+      "before_sha256": "c8fe63a74da177845149879ee99063954a2bf4319d9fbd65da7289b6497f02bc",
+      "adapted": false
+    },
+    ".gitignore": {
+      "path": ".gitignore",
+      "before_sha256": "d0fabfd91fcd582340bd9c9742d07e0fae1033ac90ab903aec5bb9126c6ef76a",
+      "adapted": true
+    },
+    "LICENSE": {
+      "path": "LICENSE",
+      "before_sha256": "5e840be8e2574ddc674ea9fac785d991d2aad1327a4a9a0f560a8cb57668c530",
+      "adapted": false
+    },
+    "README.md": {
+      "path": "README.md",
+      "before_sha256": "8d2edfbe5725f2b5cd9933f7652ef7a7fb513f2e47d52c75af35617364ddca0b",
+      "adapted": true
+    },
+    "docs/RUN_GUIDE.zh-CN.md": {
+      "path": "guide/RUN_GUIDE.zh-CN.md",
+      "before_sha256": "3eb38b83217bfe502689c4c897c466b0c79e1ed35f458d5be7f802aa5d5788fb",
+      "adapted": true
+    },
+    "examples/component_scope_proof.py": {
+      "path": "procedure_cases/scope/component_scope_proof.py",
+      "before_sha256": "05cce38bf9b9dd85a8653e519074462c90f5a8b4a12e8d40c2393a9d1ef57820",
+      "adapted": false
+    },
+    "examples/conditional_memory.py": {
+      "path": "procedure_cases/procedures/conditional_memory.py",
+      "before_sha256": "d9086c413c1015d5274801a46c3584a116a60d81e488a6e7cb664d585f711fd3",
+      "adapted": false
+    },
+    "examples/confirmed_procedure.py": {
+      "path": "procedure_cases/governance/confirmed_procedure.py",
+      "before_sha256": "b1b7b6be5dd725070561a5e103c51c88e268bcfce7bff18d1c34abb34704c1fc",
+      "adapted": true
+    },
+    "examples/experimental_procedures.py": {
+      "path": "procedure_cases/procedures/experimental_procedures.py",
+      "before_sha256": "7fde79a62c36e66eb079f95bfe01ef0709dca6bf3f169dede70483e444f12226",
+      "adapted": false
+    },
+    "examples/explicit_preconditions.py": {
+      "path": "procedure_cases/scope/explicit_preconditions.py",
+      "before_sha256": "9c8130325e0088934ca02aef1c24ecea38212f5b2aecb3e115c70e96f0231acf",
+      "adapted": true
+    },
+    "examples/local_relation_proof.py": {
+      "path": "procedure_cases/scope/local_relation_proof.py",
+      "before_sha256": "c721208077cbfe121f2952e31a605185231f66e0a823eae18904622047206e15",
+      "adapted": false
+    },
+    "examples/local_store.py": {
+      "path": "procedure_cases/procedures/local_store.py",
+      "before_sha256": "3e72f119c6629439ac51644a6589d62abc687f2e8e89f70fb52892732f5392b6",
+      "adapted": true
+    },
+    "examples/procedure_inventory.py": {
+      "path": "procedure_cases/procedures/procedure_inventory.py",
+      "before_sha256": "ac7606325e1318b25691fa28e2d038282538582b669718beab4ae419902f8bcf",
+      "adapted": true
+    },
+    "examples/request_topic_proof.py": {
+      "path": "procedure_cases/scope/request_topic_proof.py",
+      "before_sha256": "c675755888b836e5a62431f7f118815643c9a6840636dbdebb248e8eb959016c",
+      "adapted": true
+    },
+    "examples/withdrawn_procedure.py": {
+      "path": "procedure_cases/governance/withdrawn_procedure.py",
+      "before_sha256": "1f3b7c731045676cdda97b2ba9f2d81ddac98a82d3a5325ad8b4052e37303f9e",
+      "adapted": true
+    },
+    "pyproject.toml": {
+      "path": "pyproject.toml",
+      "before_sha256": "ad7a1b0d1372595f34d8f1b47727443f4116b0ca8b1d4603def50653a43a7abf",
+      "adapted": false
+    },
+    "runtime/manifest.json": {
+      "path": "runtime/manifest.json",
+      "before_sha256": "b314607b21aae56132d71133c9fc79ed0b3fd642406ecd9cfc2ed29743139a44",
+      "adapted": false
+    },
+    "scripts/build_runtime.py": {
+      "path": "scripts/build_runtime.py",
+      "before_sha256": "a64621daf7b7b982a9ac728a75898db4c2a0d9e18378b0bfc4d6528cd2866ad0",
+      "adapted": false
+    },
+    "scripts/verify_vendor.py": {
+      "path": "scripts/verify_vendor.py",
+      "before_sha256": "c4f9b6e1e036969e35f664e2c12f479446638f2d00e2835d0e695600d97b05a1",
+      "adapted": false
+    },
+    "src/cuetrail/__init__.py": {
+      "path": "src/cuetrail/__init__.py",
+      "before_sha256": "962926d386cce2822ce29db7d31125498c4bddb18c1900679d2f9678b970559f",
+      "adapted": false
+    },
+    "src/cuetrail/experimental/__init__.py": {
+      "path": "src/cuetrail/experimental/__init__.py",
+      "before_sha256": "3523345f4726cbd280cbb0f3652af9fcd11b78ffd5dcad2765c3ed81a3e77e27",
+      "adapted": false
+    },
+    "src/cuetrail/experimental/action_heads.py": {
+      "path": "src/cuetrail/experimental/action_heads.py",
+      "before_sha256": "fa1314df43253b24357100073a6331696b98b845de3cf467a6534ea90dacefbf",
+      "adapted": false
+    },
+    "src/cuetrail/experimental/evidence.py": {
+      "path": "src/cuetrail/experimental/evidence.py",
+      "before_sha256": "9afb80b62f3b309f42d8a8fc66d61a7ad6e17ecb1b998d5d10bd08d6f423e175",
+      "adapted": false
+    },
+    "src/cuetrail/experimental/injector.py": {
+      "path": "src/cuetrail/experimental/injector.py",
+      "before_sha256": "43307cafabc0dacda63a8fd70c04aa00f04e6f17f11d6767fadb571d37ee5e31",
+      "adapted": false
+    },
+    "src/cuetrail/experimental/ledger.py": {
+      "path": "src/cuetrail/experimental/ledger.py",
+      "before_sha256": "62ecd55b3f59838b29197e941c3f556ac1d0f20ebe542c73ad990e2a5326dc34",
+      "adapted": false
+    },
+    "src/cuetrail/experimental/prompts.py": {
+      "path": "src/cuetrail/experimental/prompts.py",
+      "before_sha256": "87985b104abba265cb2e7c7655d9a2107998ac5718cc6a1ad350eaf15c02a20b",
+      "adapted": false
+    },
+    "src/cuetrail/experimental/regions.py": {
+      "path": "src/cuetrail/experimental/regions.py",
+      "before_sha256": "131a622374c7331ef156333a2095de7775f5a64fe2c447d8f756bea6b8e3999a",
+      "adapted": false
+    },
+    "src/cuetrail/experimental/relations.py": {
+      "path": "src/cuetrail/experimental/relations.py",
+      "before_sha256": "b007cc750829dfff8a08c3de7f40ff2785a235553e984598d311d6b9d164b671",
+      "adapted": false
+    },
+    "src/cuetrail/experimental/renderer.py": {
+      "path": "src/cuetrail/experimental/renderer.py",
+      "before_sha256": "395837505e81cba7ed41c2d7716c63ab0d92a0c8df3bcad9531b780cd1baadce",
+      "adapted": false
+    },
+    "src/cuetrail/experimental/request_topics.py": {
+      "path": "src/cuetrail/experimental/request_topics.py",
+      "before_sha256": "e4f24b0b57154c4481aab54eabc96e242be6a823c94146bd264d77fe8a4f9bd1",
+      "adapted": false
+    },
+    "src/cuetrail/experimental/request_use.py": {
+      "path": "src/cuetrail/experimental/request_use.py",
+      "before_sha256": "5228a1692c4e3b93f1f880288779f1637da462a2e10c2ef6b724afc21a22b0f8",
+      "adapted": false
+    },
+    "src/cuetrail/experimental/source_view.py": {
+      "path": "src/cuetrail/experimental/source_view.py",
+      "before_sha256": "559b6e7931932794ff8306c9ea9b6e4fa4337c217da3bbb39d2f052f28b74204",
+      "adapted": false
+    },
+    "src/cuetrail/experimental/trigger.py": {
+      "path": "src/cuetrail/experimental/trigger.py",
+      "before_sha256": "a5a5ecd3e156ce167cfbd416e0c059e49655a9b3d09b5f5eea7067e5f1887f7f",
+      "adapted": false
+    },
+    "src/cuetrail/experimental/versions.py": {
+      "path": "src/cuetrail/experimental/versions.py",
+      "before_sha256": "5add327a37d3d04c1d57541eb0280e0111669679322fce0142983d8279747430",
+      "adapted": false
+    },
+    "src/cuetrail/procedural.py": {
+      "path": "src/cuetrail/procedural.py",
+      "before_sha256": "2630c941281855b6729041e1b75cd4386f50f23e68f96100056e6144a4d8315b",
+      "adapted": false
+    },
+    "src/cuetrail/store.py": {
+      "path": "src/cuetrail/store.py",
+      "before_sha256": "4aabcf649b416f6dd490efefa118188c46d55a6cefa612226cc626d08cc20f28",
+      "adapted": false
+    },
+    "src/cuetrail_governance/__init__.py": {
+      "path": "src/cuetrail_governance/__init__.py",
+      "before_sha256": "c93cfb223d61eb959eb9e61018d33d5dca0d9429c4275680d2cb80a86b6146a6",
+      "adapted": false
+    },
+    "src/cuetrail_governance/confirmation.py": {
+      "path": "src/cuetrail_governance/confirmation.py",
+      "before_sha256": "9633168524a8d069b3bd22d8eb51e4a3d0b88e6be9fe86b6f40b15a09929fdc3",
+      "adapted": false
+    },
+    "src/cuetrail_governance/guarded.py": {
+      "path": "src/cuetrail_governance/guarded.py",
+      "before_sha256": "41d8cfc604d4f7e224e52536b92530520f97747d963d343004318fdeeb11ef9e",
+      "adapted": false
+    },
+    "src/cuetrail_governance/inventory.py": {
+      "path": "src/cuetrail_governance/inventory.py",
+      "before_sha256": "931888040354ca9cff462d45547f3fff2e38f79f3d2a2e38b68735dddba98bba",
+      "adapted": false
+    },
+    "src/cuetrail_governance/procedure_zh.py": {
+      "path": "src/cuetrail_governance/procedure_zh.py",
+      "before_sha256": "aba9c7d28c2f7ec4723039014a066960becac8044cf3f09620116b9306728c1c",
+      "adapted": false
+    },
+    "src/cuetrail_governance/withdrawal.py": {
+      "path": "src/cuetrail_governance/withdrawal.py",
+      "before_sha256": "3a2da6bb89e4bbbe953ef341dfee0d4ef64e4c7fa7e4dee273ab0b4145e14821",
+      "adapted": false
+    },
+    "src/cuetrail_native/__init__.py": {
+      "path": "src/cuetrail_native/__init__.py",
+      "before_sha256": "c558378c0b4df4c12e61c7ec7082cf57157a2d22e24da597eae1b31903574c2a",
+      "adapted": false
+    },
+    "src/cuetrail_native/integration.py": {
+      "path": "src/cuetrail_native/integration.py",
+      "before_sha256": "4f407bfc9ad24bf75c5a02366f5e2e4a7a2b25d472559a75b5977370bd117943",
+      "adapted": false
+    },
+    "src/cuetrail_native/server.py": {
+      "path": "src/cuetrail_native/server.py",
+      "before_sha256": "737ecc57d77d01c84d5466293f758690fdf6b77796a3256d00a38c404213e681",
+      "adapted": false
+    },
+    "src/cuetrail_scope/__init__.py": {
+      "path": "src/cuetrail_scope/__init__.py",
+      "before_sha256": "39adfab91eb4a4d02d3aaf33c5e83c82c2df41ffae3700162b9a028a98bb281a",
+      "adapted": false
+    },
+    "src/cuetrail_scope/common.py": {
+      "path": "src/cuetrail_scope/common.py",
+      "before_sha256": "d7162e281f69b1361a81405eae03353165466a2909a13a796a62391ae32eb903",
+      "adapted": false
+    },
+    "src/cuetrail_scope/components.py": {
+      "path": "src/cuetrail_scope/components.py",
+      "before_sha256": "7822d0841436dbe97c010de83835e0ad0507980e21a83a6ca11cc190dd6e09e7",
+      "adapted": false
+    },
+    "src/cuetrail_scope/programs.py": {
+      "path": "src/cuetrail_scope/programs.py",
+      "before_sha256": "e4f24b0b57154c4481aab54eabc96e242be6a823c94146bd264d77fe8a4f9bd1",
+      "adapted": false
+    },
+    "src/cuetrail_scope/selector.py": {
+      "path": "src/cuetrail_scope/selector.py",
+      "before_sha256": "e86fbcb33cfe8cc2637676db4bfacfec2ca07027c11c02ee511a71a7d74eab6c",
+      "adapted": false
+    },
+    "tests/test_component_scope.py": {
+      "path": "specifications/test_component_scope.py",
+      "before_sha256": "9cfa073a9e8bf44f6926869844252e26991d6b07d7827a9f2fe907602f5bc169",
+      "adapted": false
+    },
+    "tests/test_exp_action_governance.py": {
+      "path": "specifications/test_exp_action_governance.py",
+      "before_sha256": "b35d404c815dee67a13ef510b104ae67eb75a5dc803a37b76b0998da2cd4fc70",
+      "adapted": false
+    },
+    "tests/test_exp_injector.py": {
+      "path": "specifications/test_exp_injector.py",
+      "before_sha256": "9459efee57aa524514b39d877d768edf52e3e78d566a9700f85f1c8d8326b26e",
+      "adapted": false
+    },
+    "tests/test_exp_ledger.py": {
+      "path": "specifications/test_exp_ledger.py",
+      "before_sha256": "b39d4a2e7f72de5a5e80280b546d9ed7080e7318a6c0f6ac4428e3296616d69c",
+      "adapted": false
+    },
+    "tests/test_exp_literal_versions.py": {
+      "path": "specifications/test_exp_literal_versions.py",
+      "before_sha256": "c340be700d975933487725996cefe93f97ff8b65bb808ced2bf3c6ed6747c20e",
+      "adapted": false
+    },
+    "tests/test_exp_local_relations.py": {
+      "path": "specifications/test_exp_local_relations.py",
+      "before_sha256": "15e86914d8836fae3391a6e39f7c1841540d35a831400378bb56652f60568a86",
+      "adapted": false
+    },
+    "tests/test_exp_renderer.py": {
+      "path": "specifications/test_exp_renderer.py",
+      "before_sha256": "4069d8ec88de1d23fa9cca12a6271cb1dbc790977e8ee95e5786d2fd2d2b5e76",
+      "adapted": false
+    },
+    "tests/test_exp_request_topics.py": {
+      "path": "specifications/test_exp_request_topics.py",
+      "before_sha256": "6c4b7c7a9eac3fbd578aa27a2356b9ba62a689a257be426b1fe4ac05f112efac",
+      "adapted": false
+    },
+    "tests/test_exp_request_use.py": {
+      "path": "specifications/test_exp_request_use.py",
+      "before_sha256": "325066076fdd18881873323dc86309e35c165a16e600ac96f33beb056772653a",
+      "adapted": false
+    },
+    "tests/test_exp_source_basis.py": {
+      "path": "specifications/test_exp_source_basis.py",
+      "before_sha256": "2004d69a1f902bb636c40f0b2f25f883c084f26e37c43be9a287cbcbbc2c32f6",
+      "adapted": false
+    },
+    "tests/test_exp_trigger.py": {
+      "path": "specifications/test_exp_trigger.py",
+      "before_sha256": "d648e3c5665700d4f80db88a84f1313ba77a210fb3d5874c54597bdd6dbd1ad5",
+      "adapted": false
+    },
+    "tests/test_explicit_preconditions.py": {
+      "path": "specifications/test_explicit_preconditions.py",
+      "before_sha256": "8bb01aaf7b874271948b8a58e0a048414e25fc5d67bc4ff91a4e273969022081",
+      "adapted": false
+    },
+    "tests/test_explicit_withdrawal.py": {
+      "path": "specifications/test_explicit_withdrawal.py",
+      "before_sha256": "35cd4e7d657d283be29fe2d303d7af610f6dc7c45ef226f6c94cbb3dc2e73591",
+      "adapted": false
+    },
+    "tests/test_inventory_namespace_admission.py": {
+      "path": "specifications/test_inventory_namespace_admission.py",
+      "before_sha256": "c19c4997e0e9b468816b79157f5f5846049bd8aa576515627d0d220311eceb80",
+      "adapted": false
+    },
+    "tests/test_native_current.py": {
+      "path": "specifications/test_native_current.py",
+      "before_sha256": "051e30ccfe5fae2516b49290f0a86bef932de0a19ed9c936572505133cf280e5",
+      "adapted": false
+    },
+    "tests/test_procedural.py": {
+      "path": "specifications/test_procedural.py",
+      "before_sha256": "38e3f68c2e969a29d2135f4342f22ca3cdcc41a2a29970688db0c4fa786ae139",
+      "adapted": false
+    },
+    "tests/test_procedure_inventory.py": {
+      "path": "specifications/test_procedure_inventory.py",
+      "before_sha256": "4d65948700d573ca601d064e0472cf5572eecce039d2d5fdca016b05eaaea5ba",
+      "adapted": false
+    },
+    "tests/test_user_confirmation.py": {
+      "path": "specifications/test_user_confirmation.py",
+      "before_sha256": "6c949fbf62c0ca5547cebf28e8e01ac7b0d332eb73fd50972f208970593bb08c",
+      "adapted": false
+    },
+    "tests/test_zh_programs.py": {
+      "path": "specifications/test_zh_programs.py",
+      "before_sha256": "701cc50120cfb34d19daba988656630877efdfb8285d3c5658c666db9145e809",
+      "adapted": false
+    },
+    "vendor/context-weave-exact32/.dockerignore": {
+      "path": "vendor/context-weave-exact32/.dockerignore",
+      "before_sha256": "5883da00290e2c59528b87aca2de6dc9451846da45d1ba9b26e88918a0ec5425",
+      "adapted": false
+    },
+    "vendor/context-weave-exact32/.gitattributes": {
+      "path": "vendor/context-weave-exact32/.gitattributes",
+      "before_sha256": "9a5b3e8c93ebcd35a580f2c2cf3b51cad2f4e5c1514a6984f454f36b355dacd8",
+      "adapted": false
+    },
+    "vendor/context-weave-exact32/.gitignore": {
+      "path": "vendor/context-weave-exact32/.gitignore",
+      "before_sha256": "32a83f758f5e34a3b4dcff75f738b9b03d0b4bb399bfd756bcaa6e9d2345b347",
+      "adapted": false
+    },
+    "vendor/context-weave-exact32/Caddyfile": {
+      "path": "vendor/context-weave-exact32/Caddyfile",
+      "before_sha256": "dd935aa3add2add6878a2a559feacbfd2c653016d7332bb59558f6d5ed3187b2",
+      "adapted": false
+    },
+    "vendor/context-weave-exact32/Dockerfile": {
+      "path": "vendor/context-weave-exact32/Dockerfile",
+      "before_sha256": "17570580dd2388d1f5bf4d35363efeb1e5eb9f9beeb6ae9775a3f793688dc0a3",
+      "adapted": false
+    },
+    "vendor/context-weave-exact32/LICENSE": {
+      "path": "vendor/context-weave-exact32/LICENSE",
+      "before_sha256": "5e840be8e2574ddc674ea9fac785d991d2aad1327a4a9a0f560a8cb57668c530",
+      "adapted": false
+    },
+    "vendor/context-weave-exact32/adaptive_evidence/__init__.py": {
+      "path": "vendor/context-weave-exact32/adaptive_evidence/__init__.py",
+      "before_sha256": "bffb96293a3ee82cfe3742c52d9a91e8ff65e60394b09128088d6d25cfb4ebbf",
+      "adapted": false
+    },
+    "vendor/context-weave-exact32/adaptive_evidence/api.py": {
+      "path": "vendor/context-weave-exact32/adaptive_evidence/api.py",
+      "before_sha256": "852f309c88b6a5edab2a7199e3297302fc48b1c4de24e265ae601663eb320086",
+      "adapted": false
+    },
+    "vendor/context-weave-exact32/adaptive_evidence/core.py": {
+      "path": "vendor/context-weave-exact32/adaptive_evidence/core.py",
+      "before_sha256": "8bf823550c55dbd9c0048f55dc6d43448387450591204d0513e3717a3462579f",
+      "adapted": false
+    },
+    "vendor/context-weave-exact32/adaptive_evidence/encoder.py": {
+      "path": "vendor/context-weave-exact32/adaptive_evidence/encoder.py",
+      "before_sha256": "9d780f9179c00168a68d75b74855ff6b07eb655f2ed106fd2c97b5ab9c3b78ae",
+      "adapted": false
+    },
+    "vendor/context-weave-exact32/adaptive_evidence/evidence_windows.py": {
+      "path": "vendor/context-weave-exact32/adaptive_evidence/evidence_windows.py",
+      "before_sha256": "6995c2b015b75bcb626650e73612ce5e948cc8fdc04e58ca18d534ed0b978166",
+      "adapted": false
+    },
+    "vendor/context-weave-exact32/adaptive_evidence/focused_packing.py": {
+      "path": "vendor/context-weave-exact32/adaptive_evidence/focused_packing.py",
+      "before_sha256": "4bac95a03cca7aa65807f24977b7441ddef48b83c4510da16cdfbd2d71d00116",
+      "adapted": false
+    },
+    "vendor/context-weave-exact32/adaptive_evidence/passage_packing.py": {
+      "path": "vendor/context-weave-exact32/adaptive_evidence/passage_packing.py",
+      "before_sha256": "e0048dae8c6e6368ede7219602c24557ce524e1bd5ce6c2fc201d9ec1e49bd03",
+      "adapted": false
+    },
+    "vendor/context-weave-exact32/adaptive_evidence/remote_encoder.py": {
+      "path": "vendor/context-weave-exact32/adaptive_evidence/remote_encoder.py",
+      "before_sha256": "684c42a960cc15c68cea710337421c716145facc2dc09c9a3fd8b1a427b9b1e3",
+      "adapted": false
+    },
+    "vendor/context-weave-exact32/adaptive_evidence/retrieval_views.py": {
+      "path": "vendor/context-weave-exact32/adaptive_evidence/retrieval_views.py",
+      "before_sha256": "25876968cd5029ac9da816fc459ed5a427f8eed24cc4901540dadef03746bf91",
+      "adapted": false
+    },
+    "vendor/context-weave-exact32/adaptive_evidence/source_links.py": {
+      "path": "vendor/context-weave-exact32/adaptive_evidence/source_links.py",
+      "before_sha256": "19798eb431e25c57f8f71a2524da70ac482a1e4353f1ba426bf7c0bec49b4bf0",
+      "adapted": false
+    },
+    "vendor/context-weave-exact32/adaptive_evidence/source_prior.py": {
+      "path": "vendor/context-weave-exact32/adaptive_evidence/source_prior.py",
+      "before_sha256": "01321f13642f129dd3ff4c5be27068cff07e6096b0a9b5edd3e324adad3d4e37",
+      "adapted": false
+    },
+    "vendor/context-weave-exact32/compose.yaml": {
+      "path": "vendor/context-weave-exact32/compose.yaml",
+      "before_sha256": "4b8257e6ba1b0a8996c62441a4e4826413859cf1079ec00fdeff2ef869ee542c",
+      "adapted": false
+    },
+    "vendor/context-weave-exact32/env.example": {
+      "path": "vendor/context-weave-exact32/env.example",
+      "before_sha256": "8dfeb0ebe0fa2184b805116e94462fc359b335c2fe1e0cdec98d98a49ff7b46c",
+      "adapted": false
+    },
+    "vendor/context-weave-exact32/package_source.py": {
+      "path": "vendor/context-weave-exact32/package_source.py",
+      "before_sha256": "ed86e201fee10c73ed034d228fa1220169d7adbade453772222d2a915ee1a577",
+      "adapted": false
+    },
+    "vendor/context-weave-exact32/preflight.py": {
+      "path": "vendor/context-weave-exact32/preflight.py",
+      "before_sha256": "d4d04182cc033f8843a088ebc6115c90786b2625befc97c23354dc9893061a17",
+      "adapted": false
+    },
+    "vendor/context-weave-exact32/requirements.txt": {
+      "path": "vendor/context-weave-exact32/requirements.txt",
+      "before_sha256": "30ce0a775c34585539d9e8bd18ca8d7557edd62c5f2c97f3d7dfa1fcc143a2cc",
+      "adapted": false
+    },
+    "vendor/context-weave-exact32/start_local.ps1": {
+      "path": "vendor/context-weave-exact32/start_local.ps1",
+      "before_sha256": "ac3b6d8c21a265eb0ad13a0e3dc98a893b013493179d732b2ecc502f9949b606",
+      "adapted": false
+    },
+    "vendor/context-weave-exact32/tests/test_adaptive.py": {
+      "path": "vendor/context-weave-exact32/tests/test_adaptive.py",
+      "before_sha256": "79fcd31ab327a80a1e145fded1c8f69845cb36ceb28ca1d76b34e778e14fd4d9",
+      "adapted": false
+    },
+    "vendor/context-weave-exact32/tests/test_answer_only.py": {
+      "path": "vendor/context-weave-exact32/tests/test_answer_only.py",
+      "before_sha256": "f17cc69e098e7cb46e0fb2806f694f83173b2bcd904b73be9beeb21ee9424a8a",
+      "adapted": false
+    },
+    "vendor/context-weave-exact32/tests/test_coherent_sources.py": {
+      "path": "vendor/context-weave-exact32/tests/test_coherent_sources.py",
+      "before_sha256": "92d715071082ca16e6340b2911666a008b9d4f44675a1370f8dee469157c1049",
+      "adapted": false
+    },
+    "vendor/context-weave-exact32/tests/test_contract.py": {
+      "path": "vendor/context-weave-exact32/tests/test_contract.py",
+      "before_sha256": "b89cbbfc49f6fb0a7b2f2c0260e2dfa7d2335ffc3b813f31f7593260b52c96ae",
+      "adapted": false
+    },
+    "vendor/context-weave-exact32/tests/test_evidence_budget.py": {
+      "path": "vendor/context-weave-exact32/tests/test_evidence_budget.py",
+      "before_sha256": "c41047949df0e9b65d38056de3607786ba7660a103c2b0ac3db5779645d6cd7d",
+      "adapted": false
+    },
+    "vendor/context-weave-exact32/tests/test_evidence_windows.py": {
+      "path": "vendor/context-weave-exact32/tests/test_evidence_windows.py",
+      "before_sha256": "04fadc9a3c1b612aba1f180ad1ee2fdff3a7f260eaf4a2d6483807273e742e97",
+      "adapted": false
+    },
+    "vendor/context-weave-exact32/tests/test_focused_packing.py": {
+      "path": "vendor/context-weave-exact32/tests/test_focused_packing.py",
+      "before_sha256": "1c68b0a961201c5cd7125b7914afa5dcdc2d498dc501741f18fb532f128b5c72",
+      "adapted": false
+    },
+    "vendor/context-weave-exact32/tests/test_query_documents.py": {
+      "path": "vendor/context-weave-exact32/tests/test_query_documents.py",
+      "before_sha256": "e0e0d1218cf7fc99c30ae682c08ce0794e945174e46e523478c2e52a6e2d3c28",
+      "adapted": false
+    },
+    "vendor/context-weave-exact32/tests/test_remote_encoder.py": {
+      "path": "vendor/context-weave-exact32/tests/test_remote_encoder.py",
+      "before_sha256": "8b001763ae71afe331533c03e684ccf81087223e8fafc486c8ac6d7aaa4e51c4",
+      "adapted": false
+    },
+    "vendor/context-weave-exact32/tests/test_retrieval_views.py": {
+      "path": "vendor/context-weave-exact32/tests/test_retrieval_views.py",
+      "before_sha256": "2f626a56be75b4293c0bf1e77ce0b6684ba159da58ebe69afea3651020e1e4a9",
+      "adapted": false
+    },
+    "vendor/manifest.json": {
+      "path": "vendor/manifest.json",
+      "before_sha256": "b1f5357b695eecbb7acf3891dbf7feac0a168e48a0a1a6bf528239b6503ca4d5",
+      "adapted": false
+    }
+  },
+  "protected_files": {
+    "runtime/manifest.json": "b314607b21aae56132d71133c9fc79ed0b3fd642406ecd9cfc2ed29743139a44",
+    "scripts/build_runtime.py": "a64621daf7b7b982a9ac728a75898db4c2a0d9e18378b0bfc4d6528cd2866ad0",
+    "scripts/verify_vendor.py": "c4f9b6e1e036969e35f664e2c12f479446638f2d00e2835d0e695600d97b05a1",
+    "src/cuetrail/__init__.py": "962926d386cce2822ce29db7d31125498c4bddb18c1900679d2f9678b970559f",
+    "src/cuetrail/experimental/__init__.py": "3523345f4726cbd280cbb0f3652af9fcd11b78ffd5dcad2765c3ed81a3e77e27",
+    "src/cuetrail/experimental/action_heads.py": "fa1314df43253b24357100073a6331696b98b845de3cf467a6534ea90dacefbf",
+    "src/cuetrail/experimental/evidence.py": "9afb80b62f3b309f42d8a8fc66d61a7ad6e17ecb1b998d5d10bd08d6f423e175",
+    "src/cuetrail/experimental/injector.py": "43307cafabc0dacda63a8fd70c04aa00f04e6f17f11d6767fadb571d37ee5e31",
+    "src/cuetrail/experimental/ledger.py": "62ecd55b3f59838b29197e941c3f556ac1d0f20ebe542c73ad990e2a5326dc34",
+    "src/cuetrail/experimental/prompts.py": "87985b104abba265cb2e7c7655d9a2107998ac5718cc6a1ad350eaf15c02a20b",
+    "src/cuetrail/experimental/regions.py": "131a622374c7331ef156333a2095de7775f5a64fe2c447d8f756bea6b8e3999a",
+    "src/cuetrail/experimental/relations.py": "b007cc750829dfff8a08c3de7f40ff2785a235553e984598d311d6b9d164b671",
+    "src/cuetrail/experimental/renderer.py": "395837505e81cba7ed41c2d7716c63ab0d92a0c8df3bcad9531b780cd1baadce",
+    "src/cuetrail/experimental/request_topics.py": "e4f24b0b57154c4481aab54eabc96e242be6a823c94146bd264d77fe8a4f9bd1",
+    "src/cuetrail/experimental/request_use.py": "5228a1692c4e3b93f1f880288779f1637da462a2e10c2ef6b724afc21a22b0f8",
+    "src/cuetrail/experimental/source_view.py": "559b6e7931932794ff8306c9ea9b6e4fa4337c217da3bbb39d2f052f28b74204",
+    "src/cuetrail/experimental/trigger.py": "a5a5ecd3e156ce167cfbd416e0c059e49655a9b3d09b5f5eea7067e5f1887f7f",
+    "src/cuetrail/experimental/versions.py": "5add327a37d3d04c1d57541eb0280e0111669679322fce0142983d8279747430",
+    "src/cuetrail/procedural.py": "2630c941281855b6729041e1b75cd4386f50f23e68f96100056e6144a4d8315b",
+    "src/cuetrail/store.py": "4aabcf649b416f6dd490efefa118188c46d55a6cefa612226cc626d08cc20f28",
+    "src/cuetrail_governance/__init__.py": "c93cfb223d61eb959eb9e61018d33d5dca0d9429c4275680d2cb80a86b6146a6",
+    "src/cuetrail_governance/confirmation.py": "9633168524a8d069b3bd22d8eb51e4a3d0b88e6be9fe86b6f40b15a09929fdc3",
+    "src/cuetrail_governance/guarded.py": "41d8cfc604d4f7e224e52536b92530520f97747d963d343004318fdeeb11ef9e",
+    "src/cuetrail_governance/inventory.py": "931888040354ca9cff462d45547f3fff2e38f79f3d2a2e38b68735dddba98bba",
+    "src/cuetrail_governance/procedure_zh.py": "aba9c7d28c2f7ec4723039014a066960becac8044cf3f09620116b9306728c1c",
+    "src/cuetrail_governance/withdrawal.py": "3a2da6bb89e4bbbe953ef341dfee0d4ef64e4c7fa7e4dee273ab0b4145e14821",
+    "src/cuetrail_native/__init__.py": "c558378c0b4df4c12e61c7ec7082cf57157a2d22e24da597eae1b31903574c2a",
+    "src/cuetrail_native/integration.py": "4f407bfc9ad24bf75c5a02366f5e2e4a7a2b25d472559a75b5977370bd117943",
+    "src/cuetrail_native/server.py": "737ecc57d77d01c84d5466293f758690fdf6b77796a3256d00a38c404213e681",
+    "src/cuetrail_scope/__init__.py": "39adfab91eb4a4d02d3aaf33c5e83c82c2df41ffae3700162b9a028a98bb281a",
+    "src/cuetrail_scope/common.py": "d7162e281f69b1361a81405eae03353165466a2909a13a796a62391ae32eb903",
+    "src/cuetrail_scope/components.py": "7822d0841436dbe97c010de83835e0ad0507980e21a83a6ca11cc190dd6e09e7",
+    "src/cuetrail_scope/programs.py": "e4f24b0b57154c4481aab54eabc96e242be6a823c94146bd264d77fe8a4f9bd1",
+    "src/cuetrail_scope/selector.py": "e86fbcb33cfe8cc2637676db4bfacfec2ca07027c11c02ee511a71a7d74eab6c",
+    "vendor/context-weave-exact32/.dockerignore": "5883da00290e2c59528b87aca2de6dc9451846da45d1ba9b26e88918a0ec5425",
+    "vendor/context-weave-exact32/.gitattributes": "9a5b3e8c93ebcd35a580f2c2cf3b51cad2f4e5c1514a6984f454f36b355dacd8",
+    "vendor/context-weave-exact32/.gitignore": "32a83f758f5e34a3b4dcff75f738b9b03d0b4bb399bfd756bcaa6e9d2345b347",
+    "vendor/context-weave-exact32/Caddyfile": "dd935aa3add2add6878a2a559feacbfd2c653016d7332bb59558f6d5ed3187b2",
+    "vendor/context-weave-exact32/Dockerfile": "17570580dd2388d1f5bf4d35363efeb1e5eb9f9beeb6ae9775a3f793688dc0a3",
+    "vendor/context-weave-exact32/LICENSE": "5e840be8e2574ddc674ea9fac785d991d2aad1327a4a9a0f560a8cb57668c530",
+    "vendor/context-weave-exact32/adaptive_evidence/__init__.py": "bffb96293a3ee82cfe3742c52d9a91e8ff65e60394b09128088d6d25cfb4ebbf",
+    "vendor/context-weave-exact32/adaptive_evidence/api.py": "852f309c88b6a5edab2a7199e3297302fc48b1c4de24e265ae601663eb320086",
+    "vendor/context-weave-exact32/adaptive_evidence/core.py": "8bf823550c55dbd9c0048f55dc6d43448387450591204d0513e3717a3462579f",
+    "vendor/context-weave-exact32/adaptive_evidence/encoder.py": "9d780f9179c00168a68d75b74855ff6b07eb655f2ed106fd2c97b5ab9c3b78ae",
+    "vendor/context-weave-exact32/adaptive_evidence/evidence_windows.py": "6995c2b015b75bcb626650e73612ce5e948cc8fdc04e58ca18d534ed0b978166",
+    "vendor/context-weave-exact32/adaptive_evidence/focused_packing.py": "4bac95a03cca7aa65807f24977b7441ddef48b83c4510da16cdfbd2d71d00116",
+    "vendor/context-weave-exact32/adaptive_evidence/passage_packing.py": "e0048dae8c6e6368ede7219602c24557ce524e1bd5ce6c2fc201d9ec1e49bd03",
+    "vendor/context-weave-exact32/adaptive_evidence/remote_encoder.py": "684c42a960cc15c68cea710337421c716145facc2dc09c9a3fd8b1a427b9b1e3",
+    "vendor/context-weave-exact32/adaptive_evidence/retrieval_views.py": "25876968cd5029ac9da816fc459ed5a427f8eed24cc4901540dadef03746bf91",
+    "vendor/context-weave-exact32/adaptive_evidence/source_links.py": "19798eb431e25c57f8f71a2524da70ac482a1e4353f1ba426bf7c0bec49b4bf0",
+    "vendor/context-weave-exact32/adaptive_evidence/source_prior.py": "01321f13642f129dd3ff4c5be27068cff07e6096b0a9b5edd3e324adad3d4e37",
+    "vendor/context-weave-exact32/compose.yaml": "4b8257e6ba1b0a8996c62441a4e4826413859cf1079ec00fdeff2ef869ee542c",
+    "vendor/context-weave-exact32/env.example": "8dfeb0ebe0fa2184b805116e94462fc359b335c2fe1e0cdec98d98a49ff7b46c",
+    "vendor/context-weave-exact32/package_source.py": "ed86e201fee10c73ed034d228fa1220169d7adbade453772222d2a915ee1a577",
+    "vendor/context-weave-exact32/preflight.py": "d4d04182cc033f8843a088ebc6115c90786b2625befc97c23354dc9893061a17",
+    "vendor/context-weave-exact32/requirements.txt": "30ce0a775c34585539d9e8bd18ca8d7557edd62c5f2c97f3d7dfa1fcc143a2cc",
+    "vendor/context-weave-exact32/start_local.ps1": "ac3b6d8c21a265eb0ad13a0e3dc98a893b013493179d732b2ecc502f9949b606",
+    "vendor/context-weave-exact32/tests/test_adaptive.py": "79fcd31ab327a80a1e145fded1c8f69845cb36ceb28ca1d76b34e778e14fd4d9",
+    "vendor/context-weave-exact32/tests/test_answer_only.py": "f17cc69e098e7cb46e0fb2806f694f83173b2bcd904b73be9beeb21ee9424a8a",
+    "vendor/context-weave-exact32/tests/test_coherent_sources.py": "92d715071082ca16e6340b2911666a008b9d4f44675a1370f8dee469157c1049",
+    "vendor/context-weave-exact32/tests/test_contract.py": "b89cbbfc49f6fb0a7b2f2c0260e2dfa7d2335ffc3b813f31f7593260b52c96ae",
+    "vendor/context-weave-exact32/tests/test_evidence_budget.py": "c41047949df0e9b65d38056de3607786ba7660a103c2b0ac3db5779645d6cd7d",
+    "vendor/context-weave-exact32/tests/test_evidence_windows.py": "04fadc9a3c1b612aba1f180ad1ee2fdff3a7f260eaf4a2d6483807273e742e97",
+    "vendor/context-weave-exact32/tests/test_focused_packing.py": "1c68b0a961201c5cd7125b7914afa5dcdc2d498dc501741f18fb532f128b5c72",
+    "vendor/context-weave-exact32/tests/test_query_documents.py": "e0e0d1218cf7fc99c30ae682c08ce0794e945174e46e523478c2e52a6e2d3c28",
+    "vendor/context-weave-exact32/tests/test_remote_encoder.py": "8b001763ae71afe331533c03e684ccf81087223e8fafc486c8ac6d7aaa4e51c4",
+    "vendor/context-weave-exact32/tests/test_retrieval_views.py": "2f626a56be75b4293c0bf1e77ce0b6684ba159da58ebe69afea3651020e1e4a9",
+    "vendor/manifest.json": "b1f5357b695eecbb7acf3891dbf7feac0a168e48a0a1a6bf528239b6503ca4d5"
+  },
+  "files_sha256": {
+    ".gitattributes": "c8fe63a74da177845149879ee99063954a2bf4319d9fbd65da7289b6497f02bc",
+    ".gitignore": "9e52653786ce7c2a126712f1544e364305b99553d769d79aabd9dded581c09dd",
+    "LICENSE": "5e840be8e2574ddc674ea9fac785d991d2aad1327a4a9a0f560a8cb57668c530",
+    "README.md": "5a5b8ea3f343fdefc38bb611324125523cb21692de4795f4c8e5d9a1d7d94cef",
+    "guide/EVALUATION_VERSION.zh-CN.md": "bd103d7c72ed1c7d7dbd7643193d9a4d3f19468f367a443a9a0cc931d771ac11",
+    "guide/RUN_GUIDE.zh-CN.md": "23314e28a25e46b8637ff32355caaf2b25031abdc7e40794d1869e0c45a7868d",
+    "procedure_cases/governance/confirmed_procedure.py": "028bfbbc64ffa78316126d22c9aa052d5a84a37714a0da8444a5144153d68af7",
+    "procedure_cases/governance/withdrawn_procedure.py": "6b18203415ef2343df3c8df791beb6795ed62a7d2809b941a0eb486f34429d18",
+    "procedure_cases/procedures/conditional_memory.py": "d9086c413c1015d5274801a46c3584a116a60d81e488a6e7cb664d585f711fd3",
+    "procedure_cases/procedures/experimental_procedures.py": "7fde79a62c36e66eb079f95bfe01ef0709dca6bf3f169dede70483e444f12226",
+    "procedure_cases/procedures/local_store.py": "164ab238ac03044ae5a17de31bad736685856aea3699d2af30b4e452d1ba97e0",
+    "procedure_cases/procedures/procedure_inventory.py": "5484a850864748511b6d3805ed5413ccf6c1b3735a82fc8bdf613d60f7a1cd51",
+    "procedure_cases/scope/component_scope_proof.py": "05cce38bf9b9dd85a8653e519074462c90f5a8b4a12e8d40c2393a9d1ef57820",
+    "procedure_cases/scope/explicit_preconditions.py": "b3ccd62c39927331c5721a9ccd9f26f405258a8df14569de777f8a30a7fda192",
+    "procedure_cases/scope/local_relation_proof.py": "c721208077cbfe121f2952e31a605185231f66e0a823eae18904622047206e15",
+    "procedure_cases/scope/request_topic_proof.py": "d968379bd72549deee914e26c40c6230471106972766c31db7c3e7894ebc01be",
+    "pyproject.toml": "ad7a1b0d1372595f34d8f1b47727443f4116b0ca8b1d4603def50653a43a7abf",
+    "runtime/manifest.json": "b314607b21aae56132d71133c9fc79ed0b3fd642406ecd9cfc2ed29743139a44",
+    "scripts/build_runtime.py": "a64621daf7b7b982a9ac728a75898db4c2a0d9e18378b0bfc4d6528cd2866ad0",
+    "scripts/verify_layout.py": "060245109105687f9237798d9928736051335bfa153b863f888cc45540359438",
+    "scripts/verify_vendor.py": "c4f9b6e1e036969e35f664e2c12f479446638f2d00e2835d0e695600d97b05a1",
+    "specifications/test_component_scope.py": "9cfa073a9e8bf44f6926869844252e26991d6b07d7827a9f2fe907602f5bc169",
+    "specifications/test_exp_action_governance.py": "b35d404c815dee67a13ef510b104ae67eb75a5dc803a37b76b0998da2cd4fc70",
+    "specifications/test_exp_injector.py": "9459efee57aa524514b39d877d768edf52e3e78d566a9700f85f1c8d8326b26e",
+    "specifications/test_exp_ledger.py": "b39d4a2e7f72de5a5e80280b546d9ed7080e7318a6c0f6ac4428e3296616d69c",
+    "specifications/test_exp_literal_versions.py": "c340be700d975933487725996cefe93f97ff8b65bb808ced2bf3c6ed6747c20e",
+    "specifications/test_exp_local_relations.py": "15e86914d8836fae3391a6e39f7c1841540d35a831400378bb56652f60568a86",
+    "specifications/test_exp_renderer.py": "4069d8ec88de1d23fa9cca12a6271cb1dbc790977e8ee95e5786d2fd2d2b5e76",
+    "specifications/test_exp_request_topics.py": "6c4b7c7a9eac3fbd578aa27a2356b9ba62a689a257be426b1fe4ac05f112efac",
+    "specifications/test_exp_request_use.py": "325066076fdd18881873323dc86309e35c165a16e600ac96f33beb056772653a",
+    "specifications/test_exp_source_basis.py": "2004d69a1f902bb636c40f0b2f25f883c084f26e37c43be9a287cbcbbc2c32f6",
+    "specifications/test_exp_trigger.py": "d648e3c5665700d4f80db88a84f1313ba77a210fb3d5874c54597bdd6dbd1ad5",
+    "specifications/test_explicit_preconditions.py": "8bb01aaf7b874271948b8a58e0a048414e25fc5d67bc4ff91a4e273969022081",
+    "specifications/test_explicit_withdrawal.py": "35cd4e7d657d283be29fe2d303d7af610f6dc7c45ef226f6c94cbb3dc2e73591",
+    "specifications/test_inventory_namespace_admission.py": "c19c4997e0e9b468816b79157f5f5846049bd8aa576515627d0d220311eceb80",
+    "specifications/test_native_current.py": "051e30ccfe5fae2516b49290f0a86bef932de0a19ed9c936572505133cf280e5",
+    "specifications/test_procedural.py": "38e3f68c2e969a29d2135f4342f22ca3cdcc41a2a29970688db0c4fa786ae139",
+    "specifications/test_procedure_inventory.py": "4d65948700d573ca601d064e0472cf5572eecce039d2d5fdca016b05eaaea5ba",
+    "specifications/test_user_confirmation.py": "6c949fbf62c0ca5547cebf28e8e01ac7b0d332eb73fd50972f208970593bb08c",
+    "specifications/test_zh_programs.py": "701cc50120cfb34d19daba988656630877efdfb8285d3c5658c666db9145e809",
+    "src/cuetrail/__init__.py": "962926d386cce2822ce29db7d31125498c4bddb18c1900679d2f9678b970559f",
+    "src/cuetrail/experimental/__init__.py": "3523345f4726cbd280cbb0f3652af9fcd11b78ffd5dcad2765c3ed81a3e77e27",
+    "src/cuetrail/experimental/action_heads.py": "fa1314df43253b24357100073a6331696b98b845de3cf467a6534ea90dacefbf",
+    "src/cuetrail/experimental/evidence.py": "9afb80b62f3b309f42d8a8fc66d61a7ad6e17ecb1b998d5d10bd08d6f423e175",
+    "src/cuetrail/experimental/injector.py": "43307cafabc0dacda63a8fd70c04aa00f04e6f17f11d6767fadb571d37ee5e31",
+    "src/cuetrail/experimental/ledger.py": "62ecd55b3f59838b29197e941c3f556ac1d0f20ebe542c73ad990e2a5326dc34",
+    "src/cuetrail/experimental/prompts.py": "87985b104abba265cb2e7c7655d9a2107998ac5718cc6a1ad350eaf15c02a20b",
+    "src/cuetrail/experimental/regions.py": "131a622374c7331ef156333a2095de7775f5a64fe2c447d8f756bea6b8e3999a",
+    "src/cuetrail/experimental/relations.py": "b007cc750829dfff8a08c3de7f40ff2785a235553e984598d311d6b9d164b671",
+    "src/cuetrail/experimental/renderer.py": "395837505e81cba7ed41c2d7716c63ab0d92a0c8df3bcad9531b780cd1baadce",
+    "src/cuetrail/experimental/request_topics.py": "e4f24b0b57154c4481aab54eabc96e242be6a823c94146bd264d77fe8a4f9bd1",
+    "src/cuetrail/experimental/request_use.py": "5228a1692c4e3b93f1f880288779f1637da462a2e10c2ef6b724afc21a22b0f8",
+    "src/cuetrail/experimental/source_view.py": "559b6e7931932794ff8306c9ea9b6e4fa4337c217da3bbb39d2f052f28b74204",
+    "src/cuetrail/experimental/trigger.py": "a5a5ecd3e156ce167cfbd416e0c059e49655a9b3d09b5f5eea7067e5f1887f7f",
+    "src/cuetrail/experimental/versions.py": "5add327a37d3d04c1d57541eb0280e0111669679322fce0142983d8279747430",
+    "src/cuetrail/procedural.py": "2630c941281855b6729041e1b75cd4386f50f23e68f96100056e6144a4d8315b",
+    "src/cuetrail/store.py": "4aabcf649b416f6dd490efefa118188c46d55a6cefa612226cc626d08cc20f28",
+    "src/cuetrail_governance/__init__.py": "c93cfb223d61eb959eb9e61018d33d5dca0d9429c4275680d2cb80a86b6146a6",
+    "src/cuetrail_governance/confirmation.py": "9633168524a8d069b3bd22d8eb51e4a3d0b88e6be9fe86b6f40b15a09929fdc3",
+    "src/cuetrail_governance/guarded.py": "41d8cfc604d4f7e224e52536b92530520f97747d963d343004318fdeeb11ef9e",
+    "src/cuetrail_governance/inventory.py": "931888040354ca9cff462d45547f3fff2e38f79f3d2a2e38b68735dddba98bba",
+    "src/cuetrail_governance/procedure_zh.py": "aba9c7d28c2f7ec4723039014a066960becac8044cf3f09620116b9306728c1c",
+    "src/cuetrail_governance/withdrawal.py": "3a2da6bb89e4bbbe953ef341dfee0d4ef64e4c7fa7e4dee273ab0b4145e14821",
+    "src/cuetrail_native/__init__.py": "c558378c0b4df4c12e61c7ec7082cf57157a2d22e24da597eae1b31903574c2a",
+    "src/cuetrail_native/integration.py": "4f407bfc9ad24bf75c5a02366f5e2e4a7a2b25d472559a75b5977370bd117943",
+    "src/cuetrail_native/server.py": "737ecc57d77d01c84d5466293f758690fdf6b77796a3256d00a38c404213e681",
+    "src/cuetrail_scope/__init__.py": "39adfab91eb4a4d02d3aaf33c5e83c82c2df41ffae3700162b9a028a98bb281a",
+    "src/cuetrail_scope/common.py": "d7162e281f69b1361a81405eae03353165466a2909a13a796a62391ae32eb903",
+    "src/cuetrail_scope/components.py": "7822d0841436dbe97c010de83835e0ad0507980e21a83a6ca11cc190dd6e09e7",
+    "src/cuetrail_scope/programs.py": "e4f24b0b57154c4481aab54eabc96e242be6a823c94146bd264d77fe8a4f9bd1",
+    "src/cuetrail_scope/selector.py": "e86fbcb33cfe8cc2637676db4bfacfec2ca07027c11c02ee511a71a7d74eab6c",
+    "vendor/context-weave-exact32/.dockerignore": "5883da00290e2c59528b87aca2de6dc9451846da45d1ba9b26e88918a0ec5425",
+    "vendor/context-weave-exact32/.gitattributes": "9a5b3e8c93ebcd35a580f2c2cf3b51cad2f4e5c1514a6984f454f36b355dacd8",
+    "vendor/context-weave-exact32/.gitignore": "32a83f758f5e34a3b4dcff75f738b9b03d0b4bb399bfd756bcaa6e9d2345b347",
+    "vendor/context-weave-exact32/Caddyfile": "dd935aa3add2add6878a2a559feacbfd2c653016d7332bb59558f6d5ed3187b2",
+    "vendor/context-weave-exact32/Dockerfile": "17570580dd2388d1f5bf4d35363efeb1e5eb9f9beeb6ae9775a3f793688dc0a3",
+    "vendor/context-weave-exact32/LICENSE": "5e840be8e2574ddc674ea9fac785d991d2aad1327a4a9a0f560a8cb57668c530",
+    "vendor/context-weave-exact32/adaptive_evidence/__init__.py": "bffb96293a3ee82cfe3742c52d9a91e8ff65e60394b09128088d6d25cfb4ebbf",
+    "vendor/context-weave-exact32/adaptive_evidence/api.py": "852f309c88b6a5edab2a7199e3297302fc48b1c4de24e265ae601663eb320086",
+    "vendor/context-weave-exact32/adaptive_evidence/core.py": "8bf823550c55dbd9c0048f55dc6d43448387450591204d0513e3717a3462579f",
+    "vendor/context-weave-exact32/adaptive_evidence/encoder.py": "9d780f9179c00168a68d75b74855ff6b07eb655f2ed106fd2c97b5ab9c3b78ae",
+    "vendor/context-weave-exact32/adaptive_evidence/evidence_windows.py": "6995c2b015b75bcb626650e73612ce5e948cc8fdc04e58ca18d534ed0b978166",
+    "vendor/context-weave-exact32/adaptive_evidence/focused_packing.py": "4bac95a03cca7aa65807f24977b7441ddef48b83c4510da16cdfbd2d71d00116",
+    "vendor/context-weave-exact32/adaptive_evidence/passage_packing.py": "e0048dae8c6e6368ede7219602c24557ce524e1bd5ce6c2fc201d9ec1e49bd03",
+    "vendor/context-weave-exact32/adaptive_evidence/remote_encoder.py": "684c42a960cc15c68cea710337421c716145facc2dc09c9a3fd8b1a427b9b1e3",
+    "vendor/context-weave-exact32/adaptive_evidence/retrieval_views.py": "25876968cd5029ac9da816fc459ed5a427f8eed24cc4901540dadef03746bf91",
+    "vendor/context-weave-exact32/adaptive_evidence/source_links.py": "19798eb431e25c57f8f71a2524da70ac482a1e4353f1ba426bf7c0bec49b4bf0",
+    "vendor/context-weave-exact32/adaptive_evidence/source_prior.py": "01321f13642f129dd3ff4c5be27068cff07e6096b0a9b5edd3e324adad3d4e37",
+    "vendor/context-weave-exact32/compose.yaml": "4b8257e6ba1b0a8996c62441a4e4826413859cf1079ec00fdeff2ef869ee542c",
+    "vendor/context-weave-exact32/env.example": "8dfeb0ebe0fa2184b805116e94462fc359b335c2fe1e0cdec98d98a49ff7b46c",
+    "vendor/context-weave-exact32/package_source.py": "ed86e201fee10c73ed034d228fa1220169d7adbade453772222d2a915ee1a577",
+    "vendor/context-weave-exact32/preflight.py": "d4d04182cc033f8843a088ebc6115c90786b2625befc97c23354dc9893061a17",
+    "vendor/context-weave-exact32/requirements.txt": "30ce0a775c34585539d9e8bd18ca8d7557edd62c5f2c97f3d7dfa1fcc143a2cc",
+    "vendor/context-weave-exact32/start_local.ps1": "ac3b6d8c21a265eb0ad13a0e3dc98a893b013493179d732b2ecc502f9949b606",
+    "vendor/context-weave-exact32/tests/test_adaptive.py": "79fcd31ab327a80a1e145fded1c8f69845cb36ceb28ca1d76b34e778e14fd4d9",
+    "vendor/context-weave-exact32/tests/test_answer_only.py": "f17cc69e098e7cb46e0fb2806f694f83173b2bcd904b73be9beeb21ee9424a8a",
+    "vendor/context-weave-exact32/tests/test_coherent_sources.py": "92d715071082ca16e6340b2911666a008b9d4f44675a1370f8dee469157c1049",
+    "vendor/context-weave-exact32/tests/test_contract.py": "b89cbbfc49f6fb0a7b2f2c0260e2dfa7d2335ffc3b813f31f7593260b52c96ae",
+    "vendor/context-weave-exact32/tests/test_evidence_budget.py": "c41047949df0e9b65d38056de3607786ba7660a103c2b0ac3db5779645d6cd7d",
+    "vendor/context-weave-exact32/tests/test_evidence_windows.py": "04fadc9a3c1b612aba1f180ad1ee2fdff3a7f260eaf4a2d6483807273e742e97",
+    "vendor/context-weave-exact32/tests/test_focused_packing.py": "1c68b0a961201c5cd7125b7914afa5dcdc2d498dc501741f18fb532f128b5c72",
+    "vendor/context-weave-exact32/tests/test_query_documents.py": "e0e0d1218cf7fc99c30ae682c08ce0794e945174e46e523478c2e52a6e2d3c28",
+    "vendor/context-weave-exact32/tests/test_remote_encoder.py": "8b001763ae71afe331533c03e684ccf81087223e8fafc486c8ac6d7aaa4e51c4",
+    "vendor/context-weave-exact32/tests/test_retrieval_views.py": "2f626a56be75b4293c0bf1e77ce0b6684ba159da58ebe69afea3651020e1e4a9",
+    "vendor/manifest.json": "b1f5357b695eecbb7acf3891dbf7feac0a168e48a0a1a6bf528239b6503ca4d5",
+    "guide/PROCEDURE_DEVELOPMENT.md": "1e0ec764f08f2ed761e6fcbe7c7ccb888a5079c35d39c24453e307725adb73db"
+  }
+}

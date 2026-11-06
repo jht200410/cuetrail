@@ -4,7 +4,7 @@ from pathlib import Path
 import sys
 from tempfile import TemporaryDirectory
 
-sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'src'))
+sys.path.insert(0,str(Path(__file__).resolve().parents[2]/'src'))
 from cuetrail_governance import inventory as i
 
 p,h,w=i.p,i.h,i.w

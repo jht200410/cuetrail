@@ -18,3 +18,9 @@ models/
 private/
 runtime/build*/
 .DS_Store
+
+# Development package build products
+*.egg-info/
+build/
+dist/
+__pycache__/

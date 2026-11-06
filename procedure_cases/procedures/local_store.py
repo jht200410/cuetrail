@@ -12,7 +12,7 @@ def main():
     parser.add_argument('--encoder', required=True, help='Existing local bge-small-en-v1.5 directory')
     parser.add_argument('--data-dir', default='data/demo')
     args = parser.parse_args()
-    root = Path(__file__).resolve().parents[1]
+    root = Path(__file__).resolve().parents[2]
     sys.path.insert(0, str(root/'vendor/context-weave-exact32'))
     from adaptive_evidence.core import Config, MemoryStore
     from adaptive_evidence.encoder import BGEEncoder
